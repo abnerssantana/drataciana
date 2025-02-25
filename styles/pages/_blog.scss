@@ -1,0 +1,204 @@
+@use "../abstracts/index" as *;
+
+.motioncard--wrapper,
+.blogpostcard--wrapper{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    @include min-width(xlarge){
+        margin: 80px 0;
+        justify-content: space-between;
+    }
+    & > *{
+        margin: 15px 5px;
+    }
+}
+
+
+.blogcard{
+    a{
+        text-decoration: none;
+    }
+
+    max-width: 400px;
+    border: 1px solid $darkblueop10;
+    border-radius: $border-radius-m;
+    padding: 16px 16px 20px;
+    transition: all 350ms ease-in-out;
+
+    &__image-wrap{
+        position: relative;
+        margin: 0 auto 24px;
+        max-width: 400px;
+        max-height: 480px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__date{
+        background-color: $white;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+        @include flex-col-center;
+        justify-content: center;
+
+        .p-18{
+            font-weight: 700;
+        }
+
+        .label-14{
+            font-weight: 700;
+            color: $darkblueop60;
+        }
+    }
+    &__content{
+        
+        h5{
+            padding: 6px 0 8px;
+        }
+        
+        .p-16{
+            opacity: 0.7;
+        }
+
+        &--badge{
+            display: inline-block;
+            background-color: $purpleop;
+            padding: 4px 8px;
+            text-align: center;
+            border-radius: $border-radius-xs;
+
+            p{
+                padding: 5px 10px;
+                margin-bottom: 0;
+            }
+        }
+
+        &--readmore{
+            text-align: right;
+        }
+    }
+
+    &__content-extra{
+        margin-bottom: 12px;
+        @include flex-space-center;
+        .p-date{
+            color: $darkblueop60;
+        }
+    }
+
+    &:hover{
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: $box-sh-sm;
+    }
+}
+
+.latest-news{
+    margin-top: $margin-150;
+
+    .heading--center{
+        margin-bottom: 35px;
+        @include min-width(medium){
+            margin-bottom: 70px;
+        }
+    }
+}
+
+
+// ARTICLE PAGE (blog specific page)
+
+.article-wrapper{
+    max-width: 950px;
+    margin-top: 50px;
+    @include min-width(medium){
+        margin: 70px auto;
+    }
+}
+
+.article{
+    &__meta{
+
+        &--author{
+            margin: 32px 0;
+            @include flex-center;
+            img{
+                margin-right: 10px;
+            }
+            p{
+                color: $darkblueop60;
+            }
+        }
+    }
+}
+
+
+// CATEGORY
+.blog_link_categories{
+    margin: 20px 0;
+    @include flex-jus-center;
+    
+    a{
+        font-size: clamp(1rem, 3vw, 1.125rem);
+        @include flex-jus-center;
+        text-decoration: none;
+        color: $purple;
+        background-color: $purple-light;
+        padding: 10px 20px;
+        border-radius: $border-radius-xs;
+        font-weight: 500;
+
+        svg{
+            margin-left: 4px;
+        }
+    }
+}
+
+
+.categories{
+    // large screens
+    @include min-width(medium){
+        @include flex-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+
+    // small screens - horizontal scroll
+    @include max-width(mx-medium){
+        margin: 20px 0 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .category{
+        text-decoration: none;
+        background-color: $purple-light;
+        padding: 8px 18px;
+        border-radius: $border-radius-xs;
+        font-weight: 500;
+        @include max-width(mx-medium){
+            display: inline-block;
+            margin-right: 10px ;
+        }
+    }
+
+    .category.active{
+        color: $white;
+        background-color: $purple;
+        font-weight: bold;
+        box-shadow: $box-sh-sm;
+        box-shadow: 0px 5px 20px 0px rgb(80, 57, 172, 0.1);
+    }
+}

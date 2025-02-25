@@ -1,0 +1,151 @@
+@use "../abstracts/index" as *;
+@use "../base/index" as *;
+
+
+.nav{
+    background-color: $white;
+    @include flex-center;
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    top: 0;
+    height: 56px;
+
+    @include min-width(medium){
+        height: 90px;
+        transition: all 1s;
+    } 
+
+    &__scroll{
+        @include min-width(medium){
+            height: 60px;
+            box-shadow:  $box-sh-nav;
+            transition: .2s ease;
+        }
+
+        @include max-width(mx-medium){
+            box-shadow:  $box-sh-nav;
+        } 
+    }
+
+    &__wrapper{
+        @include flex-center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__toggle{
+        z-index: 999;
+        @include min-width(medium){
+            display: none
+        }
+
+        div{
+            margin-right: -8px;
+        }
+    }
+
+    &__logo img{
+        width: 35px;
+        @include min-width(medium){
+            width: auto;
+        }
+    }
+
+    &__menu{
+        @include flex-column;
+        position: fixed;
+        top: 0px;
+        width: 65%;
+        row-gap: 24px;
+        //direction of the navbar on smaller devices
+        right: -100%;
+        transition: all 0.2s;
+        min-height: calc(100svh - 0px);
+        background-color: $white;
+        padding: 0 16px;
+
+        @include min-width(medium){
+            width: 100%;
+            flex-direction: row;
+            position: unset;
+            min-height: fit-content;
+            align-items: center;
+            background-color:transparent;
+            align-items: center;
+        } 
+
+        &--list{
+            list-style: none;
+            display: flex;
+            
+            @include max-width(mx-medium){
+                flex-direction: column;
+                text-align: center;
+                padding-inline-start: 0;
+                margin-top: 70px
+            }
+
+            @include min-width(medium){
+                @include flex-row;
+                width: 100%;
+                justify-content: center;
+            } 
+        }
+
+        &--item {
+            margin: 24px 0;
+            padding: 14px 0;
+
+            @include min-width(medium){
+                margin: 0 28px;
+                display: block;
+                position: relative;
+                display: flex;
+                align-items: center;
+                transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 1px;
+                    display: block;
+                    transition: all 0.3s ease;
+                    bottom: -2px;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    height: 2px;
+                    background-color: $purple-tertiary;
+                }
+            }
+
+            a{
+                @include max-width(mx-medium){
+                    padding: 20px 60px;
+                }
+
+                text-decoration: none;
+                color: $darkblue;
+                font-weight: 700;
+                transition: .2s ease;
+                &:hover, &:focus{
+                    color: $purple-tertiary;
+                }
+
+                &.active{
+                    color: $purple-tertiary;
+                }
+            }
+        }
+
+        &.active{
+            right: 0;
+            box-shadow: -36px 0px 34px -21px rgba(0,0,0,0.1);
+        }
+    }
+}

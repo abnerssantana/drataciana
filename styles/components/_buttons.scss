@@ -1,0 +1,169 @@
+@use "../base/typography" as *;
+@use "../abstracts/index" as *;
+
+// GLOBAL STYLE
+button, .btn{
+    white-space: nowrap;
+    font-family: 'EudoxusSans';
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+
+// VARIANT
+.btn--primary{
+    background-color: $purple;
+    color: $white;
+}
+
+.btn--secondary{
+    border: 1px solid $purple;
+    background-color: $purple-light;
+    color: $purple;
+}
+
+.btn--link{
+    background-color: $white;
+    color: $purple;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+
+    svg{
+        margin-left: 8px;
+    }
+}
+
+.btn--input{
+    display: flex;
+    align-items: center;
+    background-color: $purple;
+    color: $white;
+
+    svg{
+        margin-left: 8px;
+    }
+}
+
+// SIZE
+
+.btn--sm {
+    // font-size: 12px;
+    padding: 4px 6px;
+}
+  
+.btn--md {
+    font-size: 14px;
+    padding: 12px 18px;
+}
+  
+.btn--lg {
+    font-size: 16px;
+    padding: 16px 39px;
+
+    @include min-width(medium){
+        max-width: 240px;
+        padding: 20px 39px;
+    }
+}
+
+.btn--md-input{
+    padding: 13px 18px;
+}
+
+
+// responsive
+
+.btn-full-width{
+    @include max-width(mx-medium){
+        button{
+            width: 100%;
+        }
+    }
+}
+
+
+
+// BUTTON GROUPS (CTAgroup)
+
+.button-groupx{
+    display: flex;
+
+    .label-12{
+        font-weight: 700;
+        color: $purple;
+        margin-bottom: 4px;
+    }
+
+    .p-16{
+        font-weight: 700;
+        color: $darkblue;
+
+    }
+
+    button{
+        @include max-width(mx-medium){
+          width: 100%;
+        }
+    }
+}
+
+.button-groupx--btn-right{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include min-width(medium){
+        justify-content: space-between
+    }
+    
+    &__wrapper{
+        @include flex-center;
+        
+        &--text{
+            margin-left: 16px;
+        }
+
+        @include max-width(mx-medium){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.button-groupx--btn-left{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+    
+    &__wrapper{
+        @include flex-center;
+
+        &--text{
+            margin-left: 16px;
+        }
+    }
+}
+
+
+// scroll button
+.scrollbutton{
+    color: $purple;
+    z-index: 980;
+    background-color: $purple-light;
+    border-radius: 50%;
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(80,57,172,0.2);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(80,57,172,0.2);
+    box-shadow: 0px 3px 10px 0px rgba(80,57,172,0.2);
+    font-weight: bold;
+}
