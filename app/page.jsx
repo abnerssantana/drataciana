@@ -7,7 +7,6 @@ import {
   HeroHeading,
   BlogPostRow
 } from '@/components/home'
-import { BookAppointment } from '@/components/common'
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Experts/>
       <Testimonials/>
       <BlogPostRow/>
-      <BookAppointment/>
     </>
   )
 }

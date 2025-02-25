@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePagination, DOTS } from '@/hooks/usePagination';
-import { NavArrowRight, NavArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 
 const Pagination = props => {
@@ -42,7 +42,7 @@ const Pagination = props => {
       <>
         <li className={`pagination-item ${currentPage === 1 ? "pagination-itemDisabled" : ""}`}>
           <Link className='pagination-item-link' href={`/blog?page=${currentPage - 1}`} scroll={false}>
-            <NavArrowLeft/>
+            <ArrowLeft/>
           </Link>
         </li>
 
@@ -65,7 +65,7 @@ const Pagination = props => {
       
         <li className={`pagination-item ${currentPage === lastPage ? "pagination-itemDisabled" : ""}`}>
           <Link className='pagination-item-link' href={`/blog?page=${currentPage + 1}`} scroll={false}>
-            <NavArrowRight/>
+            <ArrowRight/>
           </Link>
         </li>
       </>
@@ -77,7 +77,7 @@ const Pagination = props => {
           href={currentPage > 2 ? `/blog?page=${currentPage - 1}` : "/blog"} 
           scroll={false}
           >
-            <NavArrowLeft/>
+            <ArrowLeft/>
           </Link>
 
           <div className="pagination-mobile__page-field">
@@ -91,7 +91,7 @@ const Pagination = props => {
           href={`/blog?page=${currentPage + 1}`} 
           scroll={false}
           >
-            <NavArrowRight/>
+            <ArrowRight/>
           </Link>
         </div>
       )}

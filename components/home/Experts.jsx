@@ -14,13 +14,13 @@ const Experts = () => {
         variants={fadeIn("right", "tween", 0.4, 1)}
         className='experts__content--heading'
         >
-          <p className="label-12">experts in dental</p>
-          <h2>Top-notch dentistry, from Seattle`s top dentists.</h2>
-          <p className="p-18">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+          <p className="label-12">Inovação e Conforto no Cuidado Odontológico</p>
+          <h2>ESPECIALISTAS EM FAZER VOCÊ SORRIR</h2>
+          <p className="p-18">Seu sorriso é único, e no nosso consultório de odontologia, somos empenhados em oferecer um atendimento excepcional que fazem toda a diferença.</p>
           <ul className="experts__content--list">
-            <li><CheckCircle color="#583FBC"/>Top quality dental team</li>
-            <li><CheckCircle color="#583FBC"/>State of the art dental services</li>
-            <li><CheckCircle color="#583FBC"/>Discount on all dental treatment</li>
+            <li><CheckCircle color="#583FBC"/>24 anos no mercado - Experiência alinhada à modernidade</li>
+            <li><CheckCircle color="#583FBC"/>20 especialidades - Serviços completos nas principais especialidades odontológicas</li>
+            <li><CheckCircle color="#583FBC"/>5 estrelas em satisfação - Nota máxima nas avaliações por nossos clientes</li>
           </ul>
         </motion.div>
 
@@ -30,8 +30,8 @@ const Experts = () => {
         >
           <img 
           src="/assets/home/home_experts-in-dental.png" 
-          alt="experts in dental" 
-          title="experts in dental" 
+          alt="especialistas em odontologia" 
+          title="especialistas em odontologia" 
           loading="lazy"
           />
         </motion.div>
