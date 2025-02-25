@@ -1,27 +1,51 @@
 export const HOME_SERVICES = [
   {
     icon: "/assets/icons/home_services_dentures.svg",
-    altText: "dentures",
-    title: "Dentures",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic."
+    altText: "ortodontia",
+    title: "Ortodontia",
+    text: "Soluções discretas e confortáveis para corrigir o posicionamento dentário e problemas de mordida."
   },
   {
     icon: "/assets/icons/home_services_implants.svg",
-    altText: "implants",
-    title: "Implants",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic."
+    altText: "restaurações",
+    title: "Restaurações",
+    text: "Recuperamos a estética e funcionalidade dos seus dentes utilizando materiais de última geração e técnicas avançadas."
   },
   {
     icon: "/assets/icons/home_services_rootcanal.svg",
-    altText: "root canal",
-    title: "Root Canal",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic."
+    altText: "clareamento",
+    title: "Clareamento",
+    text: "Procedimento não invasivo que remove manchas e descolorações, devolvendo a luminosidade natural aos seus dentes."
   },
   {
     icon: "/assets/icons/home_services_whitening.svg",
-    altText: "whitening",
-    title: "Whitening",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic."
+    altText: "prevenção",
+    title: "Prevenção",
+    text: "Nossa abordagem preventiva inclui limpeza profissional, remoção de placa bacteriana e tártaro, aplicação de flúor e selantes."
+  },
+  {
+    icon: "/assets/icons/home_services_dentures.svg",
+    altText: "cirurgias",
+    title: "Cirurgias",
+    text: "Realizamos intervenções específicas como extrações e correções gengivais, com técnicas minimamente invasivas."
+  },
+  {
+    icon: "/assets/icons/home_services_implants.svg",
+    altText: "invisalign",
+    title: "Invisalign",
+    text: "Transforme seu sorriso sem aparelho fixo. Os alinhadores Invisalign utilizam tecnologia 3D para tratamento transparente."
+  },
+  {
+    icon: "/assets/icons/home_services_whitening.svg",
+    altText: "limpeza profissional",
+    title: "Limpeza Profissional",
+    text: "Essencial para remover placa e tártaro, prevenindo cáries e problemas gengivais para um sorriso saudável."
+  },
+  {
+    icon: "/assets/icons/home_services_dentures.svg",
+    altText: "tratamento de bruxismo",
+    title: "Tratamento de Bruxismo",
+    text: "Abordagem especializada para o hábito involuntário de ranger ou apertar os dentes com soluções personalizadas."
   }
 ]
 

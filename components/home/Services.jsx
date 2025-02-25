@@ -14,12 +14,12 @@ const Services = () => {
         <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
         >
-          <p className="label-12">Services</p>
+          <p className="label-12">Serviços</p>
           <Heading
           variant="res"
           headingLevel="h2"
-          headingText="Feel amazing about your oral health"
-          description=" Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+          headingText="Agende sua consulta"
+          description="Oferecemos atendimento personalizado com as mais modernas técnicas e equipamentos para garantir o melhor tratamento para sua saúde bucal."
           />
         </motion.div>
 

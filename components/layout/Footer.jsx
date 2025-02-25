@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__row copyright">
-            <p className="p-16">&copy;Dentalist. All Rights Reserved</p>
+            <p className="p-16">&copy; Dra. Taciana Palamoni - All Rights Reserved</p>
             <div>
               <Link title="Terms of use" href={"#"}>Terms of Use</Link>
               <Link title="Privacy Policy" href={"#"}>Privacy Policy</Link>

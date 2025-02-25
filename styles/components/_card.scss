@@ -47,7 +47,7 @@
 .card--wicon-y{
     border: 1px solid $darkblueop10;
     background-color: $white;
-    height: 360px;
+    height: 375px;
     margin: 1rem 0;
     transition: all 350ms ease-in-out;
     
@@ -76,6 +76,8 @@
         }
         p{
             opacity: .7;
+            font-size: 14px;
+            line-height: 1.5;
         }
     }
 
@@ -106,6 +108,26 @@
     }
 }
 
+.card--wicon-y:nth-child(5){
+    .card--wicon-y__image-wrap{
+        background-color: rgb(219, 250, 232);  /* Mint green */
+    }
+}
+.card--wicon-y:nth-child(6){
+    .card--wicon-y__image-wrap{
+        background-color: rgb(250, 242, 219);  /* Light yellow */
+    }
+}
+.card--wicon-y:nth-child(7){
+    .card--wicon-y__image-wrap{
+        background-color: rgb(226, 219, 250);  /* Light lavender */
+    }
+}
+.card--wicon-y:nth-child(8){
+    .card--wicon-y__image-wrap{
+        background-color: rgb(250, 226, 219);  /* Light peach */
+    }
+}
 
 // horizontal card
 .card--wicon-x{

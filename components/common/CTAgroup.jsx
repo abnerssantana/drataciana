@@ -20,11 +20,11 @@ const CTAgroup = (props) => {
           src={props.image} 
           height={64} 
           width={64} 
-          alt="24h dental emergency"
+          alt="24h Fale Conosco"
           />
         </div>
         <div className={`button-groupx--${props.variant}__wrapper--text`}>
-          <p className="label-12">Dental Emergency</p>
+          <p className="label-12">Fale Conosco</p>
           <p className="p-16">17 98114-1014</p>
         </div>
       </div>
