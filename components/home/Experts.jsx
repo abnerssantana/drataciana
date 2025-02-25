@@ -1,6 +1,6 @@
 "use client"
 import { Container } from "../layout"
-import { CheckCircle } from "iconoir-react"
+import { CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/utils/motions"
 import { MotionRow } from "../common/motion/MotionBlog"

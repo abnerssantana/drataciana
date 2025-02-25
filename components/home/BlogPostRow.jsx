@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Container } from '../layout'
 import { BlogPost } from '../blog'
 import { getPostMetadata } from '@/lib/getPosts'
-import { ArrowRight } from 'iconoir-react'
+import { ArrowRight } from 'lucide-react'
 import { MotionWrapper, MotionHeading } from '../common/motion'
 import { MotionRow } from '../common/motion/MotionBlog'
 

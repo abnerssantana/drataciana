@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useRef } from "react";
-import { NavArrowUp, NavArrowDown } from "iconoir-react";
+import { ArrowUp, ArrowDown } from "lucide-react";
 
 const Accordion = ({ question, answer }) => {
   const [isActive, setIsActive] = useState(false);
@@ -15,7 +15,7 @@ const Accordion = ({ question, answer }) => {
       <span className="accordion__title" onClick={handleToggle}>
         <h5>{question}</h5>
         <span className="accordion__control">
-            {isActive ? <NavArrowUp height={36} width={36}/> : <NavArrowDown height={36} width={36}/>} 
+            {isActive ? <ArrowUp height={36} width={36}/> : <ArrowDown height={36} width={36}/>} 
         </span>
       </span>
 

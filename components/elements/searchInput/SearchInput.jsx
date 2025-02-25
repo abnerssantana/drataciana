@@ -1,5 +1,5 @@
 import { Button } from ".."
-import { Search } from "iconoir-react"
+import { Search } from "lucide-react"
 
 const SearchInput = () => {
   return (

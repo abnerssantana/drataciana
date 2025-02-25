@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePagination, DOTS } from '@/hooks/usePagination';
-import { NavArrowRight, NavArrowLeft } from 'iconoir-react';
+import { NavArrowRight, NavArrowLeft } from 'lucide-react';
 
 
 const Pagination = props => {

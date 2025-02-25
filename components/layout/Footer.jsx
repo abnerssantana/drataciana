@@ -1,11 +1,10 @@
 'use client'
 import Link from "next/link"
 import { 
-  IconoirProvider, 
-  Twitter, 
   Facebook, 
+  Twitter, 
   Instagram 
-} from "iconoir-react"
+} from "lucide-react"
 import { 
   FOOTER_DATA_CONTACT_INFORMATION, 
   FOOTER_DATA_LINKS 
@@ -30,15 +29,21 @@ const Footer = () => {
               <div className="footer__col--content">
                 <p className="label-12">Follow us on</p>
                 <div className="footer__col--content__social-media">
-                  <IconoirProvider iconProps={{
-                    width: '30px',
-                    height: '30px',
-                    cursor: 'pointer'
-                  }}>
-                    <Facebook/>
-                    <Twitter/>
-                    <Instagram/>
-                  </IconoirProvider>
+                  <Facebook 
+                    size={30} 
+                    color="currentColor" 
+                    style={{ cursor: 'pointer' }} 
+                  />
+                  <Twitter 
+                    size={30} 
+                    color="currentColor" 
+                    style={{ cursor: 'pointer' }} 
+                  />
+                  <Instagram 
+                    size={30} 
+                    color="currentColor" 
+                    style={{ cursor: 'pointer' }} 
+                  />
                 </div>
               </div>
             </div>

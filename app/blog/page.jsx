@@ -4,7 +4,7 @@ import { Container } from "@/components/layout";
 import { Heading } from "@/components/common";
 import { BlogPost, HeroHeading } from "@/components/blog";
 import { Pagination } from "@/components/elements";
-import { ArrowRight } from "iconoir-react";
+import { ArrowRight } from "lucide-react";
 import { MotionRowOnce } from "@/components/common/motion/MotionBlog";
 
 
