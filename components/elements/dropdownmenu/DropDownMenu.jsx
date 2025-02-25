@@ -1,7 +1,10 @@
 "use client"
 import Select from "react-select";
+import { useId } from "react"; // Importe o hook useId
 
-const DropDownMenu = ({ title, items, placeholder, name}) => {
+const DropDownMenu = ({ title, items, placeholder, name }) => {
+  // Use o hook useId para gerar IDs estáveis
+  const selectId = useId();
 
   return (
     <div className='form__field'>
@@ -13,6 +16,7 @@ const DropDownMenu = ({ title, items, placeholder, name}) => {
         isClearable
         name={name}
         options={items}
+        instanceId={selectId} // Adicione esta prop para resolver o problema de hidratação
       />
     </div>
   )
