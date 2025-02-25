@@ -25,7 +25,7 @@ const CTAgroup = (props) => {
         </div>
         <div className={`button-groupx--${props.variant}__wrapper--text`}>
           <p className="label-12">Dental Emergency</p>
-          <p className="p-16">03 482 394 123</p>
+          <p className="p-16">17 98114-1014</p>
         </div>
       </div>
       <Button size="lg" variant={props.btnVariant} type="button">Book an appointment</Button>

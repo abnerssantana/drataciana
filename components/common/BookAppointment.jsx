@@ -31,7 +31,7 @@ const BookAppointment = () => {
         className="book-appointment__wrapper--content book-appointment__wrapper--col"
         >
           <div className="book-appointment__wrapper--heading">
-            <p className="label-12">Book appointment</p>
+            <p className="label-12">Agendar Consulta</p>
             <h2>Care at Dentalist is pleasure</h2>
             <p className="p-18">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual</p>
           </div>

@@ -15,8 +15,8 @@ const HeroHeading = () => {
           <div className="hero">
             <div className="hero__content wrapper">
               <div className='hero__content--heading'>
-                <motion.h1 variants={textVariant(0.5)}>Entrust your smile to a professional</motion.h1>
-                <motion.p variants={textVariant(0.6)} className="p-18">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</motion.p>
+                <motion.h1 variants={textVariant(0.5)}>Excelência em Ortodontia desde 2000</motion.h1>
+                <motion.p variants={textVariant(0.6)} className="p-18">Referência em São José do Rio Preto, próximo ao Plaza Shopping. Combinamos tecnologia avançada e atendimento especializado para todas as idades.</motion.p>
               </div>
               <motion.div variants={textVariant(0.6)}>
                 <CTAgroup variant="btn-left" image={callIcon} btnVariant="primary"/>
@@ -41,7 +41,7 @@ const HeroHeading = () => {
         className='hero_container_text'
         >
           <div className='wrapper'>
-            <h3>Dentalist is re-imagining what the dental experience can be and proudly setting a new standard for patient care.</h3>
+            <h3>Seu sorriso perfeito, nossa especialidade.</h3>
             <div className="line"></div>
           </div>
         </motion.div>

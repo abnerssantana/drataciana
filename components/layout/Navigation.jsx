@@ -57,7 +57,7 @@ const Navigation = () => {
               />
             ))}
           </ul>
-          <Button size="md" variant="primary" type="button">Book Appointment</Button>
+          <Button size="md" variant="primary" type="button">Agendar Consulta</Button>
         </div>
       </div>
     </motion.nav>
