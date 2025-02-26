@@ -7,16 +7,12 @@ export const MENU_LIST = [
 
 export const FOOTER_DATA_LINKS = [
   {
-    link_text: "About us",
+    link_text: "Sobre",
     value: "about",
   },
   {
-    link_text: "Dental Services",
+    link_text: "Serviços",
     value: "services"
-  },
-  {
-    link_text: "Dentist",
-    value: ""
   },
   {
     link_text: "Blog",
@@ -30,18 +26,18 @@ export const FOOTER_DATA_LINKS = [
 
 export const FOOTER_DATA_CONTACT_INFORMATION = [
   {
-    label: "Phone number",
-    value: "+088 123 654 987",
+    label: "Whastapp",
+    value: "17 981141014",
     icon: "/assets/footer/Footer_Number.svg"
   },
   {
-    label: "Open Hours",
-    value: "09:00 AM - 18:00 PM",
+    label: "Horário de funcionamento",
+    value: "09:00 - 19:00",
     icon: "/assets/footer/Footer_Time.svg"
   },
   {
-    label: "Clinic Address",
-    value: "35 West Dental Street California 1004",
+    label: "Onde estamos",
+    value: "Avenida Emilio Trevisam 655, Sala 609, Bom Jardim. São Jose do Rio Preto – SP",
     icon: "/assets/footer/Footer_Address.svg"
   }
 ]
