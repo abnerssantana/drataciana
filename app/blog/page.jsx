@@ -33,7 +33,7 @@ const Blog = ({ searchParams }) => {
         <Heading 
         variant="center" 
         headingLevel="h2" 
-        headingText="Stay updated with our latest news"
+        headingText="Dicas para sua saúde bucal"
         />
         <div className="blog_link_categories">
           <Link href={`/blog/categories/all`}>View blog categories <ArrowRight/></Link>

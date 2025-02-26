@@ -18,12 +18,35 @@ button, .btn{
 .btn--primary{
     background-color: $purple;
     color: $white;
+    transition: all 0.3s ease; // Adicionar transição suave
+    
+    &:hover {
+        background-color: darken($purple, 10%); // Escurecer ligeiramente ao passar o mouse
+        transform: translateY(-2px); // Leve efeito de elevação
+        box-shadow: 0 4px 8px rgba($purple, 0.3); // Sombra sutil
+    }
+    
+    &:active {
+        transform: translateY(0); // Retorna à posição normal quando clicado
+    }
 }
 
 .btn--secondary{
     border: 1px solid $purple;
     background-color: $purple-light;
     color: $purple;
+    transition: all 0.3s ease; // Adicionar transição suave
+    
+    &:hover {
+        background-color: $purple; // Mudar para a cor principal no hover
+        color: $white; // Mudar o texto para branco para contraste
+        transform: translateY(-2px); // Leve efeito de elevação
+        box-shadow: 0 4px 8px rgba($purple, 0.3); // Sombra sutil
+    }
+    
+    &:active {
+        transform: translateY(0); // Retorna à posição normal quando clicado
+    }
 }
 
 .btn--link{

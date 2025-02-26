@@ -11,7 +11,7 @@ const LatestNews = () => {
         <Heading 
         variant="center" 
         headingLevel="h2" 
-        headingText="Stay updated with our latest news"
+        headingText="Dicas para sua saúde bucal"
         />
   
         <div className="card-group-grid card-group-grid_3">

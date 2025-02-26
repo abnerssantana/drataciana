@@ -13,7 +13,7 @@ const BlogPostRow = () => {
     <Container tag='section' variant='lg' className="blogpostrow">
       <div className="blogpostrow__wrapper">
         <MotionHeading 
-        headingText="Stay Updated with our latest news"
+        headingText="Dicas para sua saúde bucal"
         variant="center"
         label="Blog"
         />
@@ -31,7 +31,7 @@ const BlogPostRow = () => {
 
         <MotionWrapper className='content-center'>
           <Link href="/blog" className='btn btn--link'>
-            View all blog posts <ArrowRight height={26} width={26}/>
+            Todos os posts <ArrowRight height={26} width={26}/>
           </Link>
         </MotionWrapper>
       </div>
