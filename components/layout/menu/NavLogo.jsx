@@ -7,16 +7,16 @@ const NavLogo = () => {
       <picture>
         <source 
         media="(max-width: 969px)" 
-        srcSet="/assets/logo/logo_small.svg" 
+        srcSet="/assets/logo/logo_small.png" 
         loading="lazy"
         />
         <source 
         media="(min-width: 970px)" 
-        srcSet="/assets/logo/logo.svg" 
+        srcSet="/assets/logo/logo.png" 
         loading="lazy"
         />
         <img 
-        src="/asset/logo.svg" 
+        src="/asset/logo.png" 
         alt="logo" 
         title="Back to homepage"
         />

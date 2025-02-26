@@ -1,6 +1,6 @@
 export const HOME_SERVICES = [
   {
-    icon: "/assets/icons/home_services_dentures.svg",
+    icon: "/assets/icons/home_features_fullservice-d.svg",
     altText: "ortodontia",
     title: "Ortodontia",
     text: "Soluções discretas e confortáveis para corrigir o posicionamento dentário e problemas de mordida."
@@ -12,7 +12,7 @@ export const HOME_SERVICES = [
     text: "Recuperamos a estética e funcionalidade dos seus dentes utilizando materiais de última geração e técnicas avançadas."
   },
   {
-    icon: "/assets/icons/home_services_rootcanal.svg",
+    icon: "/assets/icons/home_features_no-judgement.svg",
     altText: "clareamento",
     title: "Clareamento",
     text: "Procedimento não invasivo que remove manchas e descolorações, devolvendo a luminosidade natural aos seus dentes."
@@ -30,7 +30,7 @@ export const HOME_SERVICES = [
     text: "Realizamos intervenções específicas como extrações e correções gengivais, com técnicas minimamente invasivas."
   },
   {
-    icon: "/assets/icons/home_services_implants.svg",
+    icon: "/assets/icons/home_features_invisalign.png",
     altText: "invisalign",
     title: "Invisalign",
     text: "Transforme seu sorriso sem aparelho fixo. Os alinhadores Invisalign utilizam tecnologia 3D para tratamento transparente."
