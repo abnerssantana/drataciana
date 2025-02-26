@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Container } from "../layout"
 import { TESTIMONIALS } from "@/utils/data"
 import { motion } from "framer-motion"
 import { fadeIn, textVariant } from "@/utils/motions";
 import { MotionRow } from "../common/motion/MotionBlog";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const TestimonialCard = (props) => {
   const totalStars = 5;
@@ -36,6 +37,46 @@ const TestimonialCard = (props) => {
 }
 
 const Testimonials = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const testimonialsPerPage = 3;
+  
+  // Update isMobile state on window resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 970);
+    };
+    
+    // Initial check
+    checkMobile();
+    
+    // Add event listener
+    window.addEventListener("resize", checkMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+  
+  // Calculate pagination
+  const indexOfLastTestimonial = currentPage * testimonialsPerPage;
+  const indexOfFirstTestimonial = indexOfLastTestimonial - testimonialsPerPage;
+  const currentTestimonials = TESTIMONIALS.slice(indexOfFirstTestimonial, indexOfLastTestimonial);
+  const totalPages = Math.ceil(TESTIMONIALS.length / testimonialsPerPage);
+  
+  // Handle pagination
+  const handlePrevPage = () => {
+    setCurrentPage(prev => Math.max(prev - 1, 1));
+  };
+  
+  const handleNextPage = () => {
+    setCurrentPage(prev => Math.min(prev + 1, totalPages));
+  };
+  
+  // Use simpler animation for mobile
+  const cardAnimation = isMobile 
+    ? { hidden: { opacity: 0 }, show: { opacity: 1, transition: { duration: 0.3 } } }
+    : fadeIn("up", "tween", 0.5, 1);
+
   return (
     <Container tag="section" variant="xxl" className="testimonials">
       <MotionRow
@@ -55,10 +96,10 @@ const Testimonials = () => {
         </div>
 
         <motion.div
-          variants={fadeIn("up", "tween", 0.5, 1)}
+          variants={cardAnimation}
           className="testimonials__card-group"
         >
-          {TESTIMONIALS.map((item, index) => (
+          {currentTestimonials.map((item, index) => (
             <TestimonialCard
               key={item.id}
               name={item.name}
@@ -68,6 +109,28 @@ const Testimonials = () => {
             />
           ))}
         </motion.div>
+        
+        {totalPages > 1 && (
+          <div className="testimonials__pagination">
+            <button 
+              onClick={handlePrevPage} 
+              disabled={currentPage === 1}
+              className={`testimonials__pagination-btn ${currentPage === 1 ? 'testimonials__pagination-btn--disabled' : ''}`}
+            >
+              <ArrowLeft />
+            </button>
+            <span className="testimonials__pagination-text">
+              {currentPage} / {totalPages}
+            </span>
+            <button 
+              onClick={handleNextPage} 
+              disabled={currentPage === totalPages}
+              className={`testimonials__pagination-btn ${currentPage === totalPages ? 'testimonials__pagination-btn--disabled' : ''}`}
+            >
+              <ArrowRight />
+            </button>
+          </div>
+        )}
       </MotionRow>
     </Container>
   )

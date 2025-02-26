@@ -118,8 +118,6 @@
     }
 }
 
-
-
 .testimonials{
     background-color: rgb(217, 235, 250);
     @include colorBackground;
@@ -164,7 +162,7 @@
             max-width: 360px;
             @include flex-column;
             align-items: center;
-            padding: 0 39px 48px;
+            padding: 0 39px 40px;
     
             &--image-wrap{
                 position: relative;
@@ -182,7 +180,7 @@
                 @include flex-col-center;
                 text-align: center;
                 h5{
-                    margin: 0px 0 10px;
+                    margin: 0px 0 0px;
                 }
             }
     
@@ -196,6 +194,49 @@
             }
         }
     }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        gap: 20px;
+
+        &-text {
+            font-weight: 500;
+            color: $darkblue;
+        }
+
+        &-btn {
+            background-color: $purple-light;
+            color: $purple;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: $purple;
+                color: $white;
+            }
+
+            &--disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+                
+                &:hover {
+                    background-color: $purple-light;
+                    color: $purple;
+                }
+            }
+        }
+    }
+
 }
 
 
