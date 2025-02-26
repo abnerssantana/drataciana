@@ -17,7 +17,8 @@ export const FOOTER_DATA_CONTACT_INFORMATION = [
   },
   {
     label: "Onde estamos",
-    value: "Avenida Emilio Trevisam 655, Sala 609, Bom Jardim. São Jose do Rio Preto – SP",
+    value: "Avenida Emilio Trevisam 655, Sala 609",
+    value2: "Bom Jardim São Jose do Rio Preto – SP",
     icon: "/assets/footer/Footer_Address.svg"
   }
 ]

@@ -63,6 +63,7 @@ const Footer = () => {
                     <div className="footer__contact-text">
                       <p className="label-12">{item.label}</p>
                       <p className="p-18">{item.value}</p>
+                      <p className="p-18">{item.value2}</p>
                     </div>
                   </div>
                 );

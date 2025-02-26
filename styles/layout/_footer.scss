@@ -176,12 +176,39 @@
     }
     
     &__developer-link {
-        color: $purple-secondary;
+        color: #FFFFFF;
         transition: color 0.3s ease;
         
         &:hover {
             color: $purple;
-            text-decoration: underline;
         }
     }
+
+    &__col{
+        padding: 0 15px; // Adicionando padding aos lados
+        
+        &:first-child{
+            max-width: 510px;
+        }
+    
+        @include min-width(medium){
+            padding: 0 25px; // Padding maior em telas maiores
+        }
+    
+        &--info-group{
+            display: flex;
+            align-items: flex-start;
+            margin: 16px 0;
+            gap: 16px;
+    
+            .p-18{
+                color: $white;
+                font-weight: 700;
+                line-height: 28px;
+            }
+        }
+    
+        // Restante do código permanece igual...
+    }
 }
+
