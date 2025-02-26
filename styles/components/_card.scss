@@ -36,7 +36,7 @@
 // GLOBAL STYLES (all cards)
 
 .card{
-    border-radius: $border-radius-m;
+    border-radius: $border-radius-s;
 }
 
 
@@ -48,7 +48,7 @@
     border: 1px solid $darkblueop10;
     background-color: $white;
     height: 375px;
-    margin: 1rem 0;
+    margin: 0.3rem 0;
     transition: all 350ms ease-in-out;
     
     @include min-width(medium){
@@ -56,7 +56,7 @@
     }
 
     &__image-wrap{
-        border-radius: $border-radius-m;
+        border-radius: $border-radius-s;
         height: 200px;
         max-width:100%;
         max-height: 100%;
@@ -179,7 +179,7 @@
         display: flex;
         align-items: end;
         margin-bottom: 24px;
-        border-radius: $border-radius-m;
+        border-radius: $border-radius-s;
 
         img{
             max-width:100%;
@@ -194,7 +194,7 @@
     cursor: default;
     max-width: 510px;
     &__wrapper{
-        border-radius: $border-radius-m;
+        border-radius: $border-radius-s;
         border: 1px solid $darkblueop10;
         padding: 16px 16px 32px;
         text-align: center;
