@@ -28,7 +28,7 @@ const CTAgroup = (props) => {
           <p className="p-16">17 98114-1014</p>
         </div>
       </div>
-      <Button size="lg" variant={props.btnVariant} type="button">Book an appointment</Button>
+      <Button size="lg" variant={props.btnVariant} type="button">Marque sua consulta</Button>
     </div>
   )
 }

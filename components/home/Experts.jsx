@@ -15,7 +15,7 @@ const Experts = () => {
         className='experts__content--heading'
         >
           <p className="label-12">Inovação e Conforto no Cuidado Odontológico</p>
-          <h2>ESPECIALISTAS EM FAZER VOCÊ SORRIR</h2>
+          <h2>Especialistas em fazer você sorrir</h2>
           <p className="p-18">Seu sorriso é único, e no nosso consultório de odontologia, somos empenhados em oferecer um atendimento excepcional que fazem toda a diferença.</p>
           <ul className="experts__content--list">
             <li><CheckCircle color="#583FBC"/>24 anos no mercado - Experiência alinhada à modernidade</li>

@@ -19,7 +19,7 @@ const HeroHeading = () => {
               variants={textVariant(0.7)} 
               className="btn-full-width"
               >
-                <Button variant="primary" size="lg" type="button">Book an appointment</Button>
+                <Button variant="primary" size="lg" type="button">Marque sua consulta</Button>
               </motion.div>
             </div>
 

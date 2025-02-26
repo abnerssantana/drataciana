@@ -32,7 +32,7 @@ const Priority = () => {
               <h2>Our Clients are our priority</h2>
               <p className="p-18">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
               <div className="btn-full-width">
-                <Button size="lg" variant="secondary" type="button">Book an appointment</Button>
+                <Button size="lg" variant="secondary" type="button">Marque sua consulta</Button>
               </div>
             </div>
           </motion.div>

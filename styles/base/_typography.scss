@@ -72,7 +72,7 @@ p{
     --max: 1rem;
 }
 
-.label-12, .label-14{
+.label-12,.label-13, .label-14{
     font-family:'EudoxusSans';
 }
 
@@ -88,3 +88,10 @@ p{
     margin-bottom: 12px;
 }
 
+.label-13{
+    font-size: 1.15rem; 
+    color: $purple;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
