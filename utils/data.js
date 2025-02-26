@@ -80,24 +80,45 @@ export const HOME_FEATURES = [
 export const TESTIMONIALS = [
   {
     id: 0,
-    name: "Robert Fox",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts",
-    rating: 4,
-    image: "/assets/avatars/avatar_2.png"
+    name: "Victor Hugo",
+    text: "Desde a primeira consulta, antes do início do tratamento, já pude constatar que a Dra. Taciana era uma ótima profissional, e ela conseguiu passar uma sensação de que todo o processo seria o mais rápido e menos desconfortável possível. Hoje, depois de termos concluído um tratamento de 2 anos em 1 ano e 7 meses, só posso dizer que a impressão inicial não estava à altura. Então, só posso agradecer pelo excelente serviço prestado. 100% recomendada.",
+    rating: 5,
+    image: "/assets/avatars/avatar.png"
   },
   {
     id: 1,
-    name: "Albert Flores",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts",
+    name: "Camila Eduarda",
+    text: "Excelente profissional desdo começo do tratamento até o fim. Super indico e recomendo. Obrigado por tudo.",
     rating: 5,
-    image: "/assets/avatars/avatar_3.png"
+    image: "/assets/avatars/avatar.png"
   },
   {
     id: 2,
-    name: "Bessie Cooper",
-    text: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts",
-    rating: 4,
-    image: "/assets/avatars/avatar_1.png"
+    name: "Luciana Dias",
+    text: "Maravilhoso desde o atendimento (a Vitoria secretária e auxiliar maravilhosa,super educada e prestativa), até seu último dia de tratamento. Profissional ímpar, responsável e muito dedicada!!! Super indico, garanto que ficaram satisfeitos com o resultado. Parabéns Dra Taciana seu atendimentoe profissionalismo sao impecáveis",
+    rating: 5,
+    image: "/assets/avatars/avatar.png"
+  },
+  {
+    id: 3,
+    name: "Vivaldo Gomes da Costa",
+    text: "Ótimo atendimento pela Dra Taciana e Vitória. Muitíssimo feliz com os resultados de meu tratamento. Super indico os serviços da Dra Taciana!",
+    rating: 5,
+    image: "/assets/avatars/avatar.png"
+  },
+  {
+    id: 4,
+    name: "Giuliana Moro",
+    text: "Excelente atendimento tanto na recepção e no atendimento com a doutora tassiana os dentes do meu filho ficaram perfeitos.",
+    rating: 5,
+    image: "/assets/avatars/avatar.png"
+  },
+  {
+    id: 5,
+    name: "Lorena Rodrigues",
+    text: "Com certeza eu recomendo e dou 5 estrelas. Se pudesse daria mais Dra Taciana ótima profissional, super atenciosa, explica super bem, tira todas as dúvidas. Adoramos te conhecer.",
+    rating: 5,
+    image: "/assets/avatars/avatar.png"
   },
 ]
 
