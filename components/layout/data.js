@@ -1,8 +1,7 @@
 export const MENU_LIST = [
-  { text: "About Us", href: "/about", id: 0 },
-  { text: "Our Services", href: "/services", id: 1 },
-  { text: "Contact Us", href: "/contact", id: 2 },
-  { text: "Blog", href: "/blog", id: 3 },
+  { text: "Sobre", href: "/about", id: 0 },
+  { text: "Serviços", href: "/services", id: 1 },
+  { text: "Blog", href: "/blog", id: 2 },
 ]
 
 export const FOOTER_DATA_LINKS = [
