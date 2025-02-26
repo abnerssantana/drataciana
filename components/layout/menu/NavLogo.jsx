@@ -7,7 +7,7 @@ const NavLogo = () => {
       <picture>
         <source 
         media="(max-width: 969px)" 
-        srcSet="/assets/logo/logo_small.png" 
+        srcSet="/assets/logo/logo.png" 
         loading="lazy"
         />
         <source 

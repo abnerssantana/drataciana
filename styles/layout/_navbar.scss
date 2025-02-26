@@ -48,7 +48,7 @@
     }
 
     &__logo img{
-        width: 35px;
+        width: 150px;
         @include min-width(medium){
             width: auto;
         }
