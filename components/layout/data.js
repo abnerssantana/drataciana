@@ -4,25 +4,6 @@ export const MENU_LIST = [
   { text: "Blog", href: "/blog", id: 2 },
 ]
 
-export const FOOTER_DATA_LINKS = [
-  {
-    link_text: "Sobre",
-    value: "about",
-  },
-  {
-    link_text: "Serviços",
-    value: "services"
-  },
-  {
-    link_text: "Blog",
-    value:"blog"
-  },
-  {
-    link_text: "FAQs",
-    value: ""
-  },
-]
-
 export const FOOTER_DATA_CONTACT_INFORMATION = [
   {
     label: "Whastapp",

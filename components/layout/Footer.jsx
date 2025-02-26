@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link"
 import {
   Facebook,
   Twitter,
@@ -7,7 +6,6 @@ import {
 } from "lucide-react"
 import {
   FOOTER_DATA_CONTACT_INFORMATION,
-  FOOTER_DATA_LINKS
 } from "./data"
 
 
@@ -45,17 +43,6 @@ const Footer = () => {
                   style={{ cursor: 'pointer' }}
                 />
               </div>
-            </div>
-          </div>
-
-          <div className="footer__col">
-            <div className="footer__col--content__links">
-              <p className="label-12">Menu</p>
-              {FOOTER_DATA_LINKS.map((link, index) => (
-                <Link key={index} className="label-14" href={link.value}>
-                  {link.link_text}
-                </Link>
-              ))}
             </div>
           </div>
 
