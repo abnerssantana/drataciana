@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="footer__col--content">
               <img
                 className="footer__col--logo"
-                src="/assets/footer/Footer__logo.svg"
+                src="/assets/footer/Footer__logo.png"
                 alt="logo"
                 loading="lazy"
               />
