@@ -90,7 +90,7 @@ const Testimonials = () => {
             </div>
 
             <div className="SectionWTextOnly__row--col__text">
-              <motion.p variants={textVariant(0.4)} className="p-18">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</motion.p>
+              <motion.p variants={textVariant(0.4)} className="p-18">A confiança e o sorriso dos nossos pacientes são nossa maior recompensa. Cada depoimento reflete o compromisso em proporcionar um atendimento acolhedor e de excelência em cada consulta.</motion.p>
             </div>
           </div>
         </div>

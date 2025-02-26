@@ -53,26 +53,26 @@ export const HOME_SERVICES = [
 export const HOME_FEATURES = [
   {
     id: 0,
-    title: "Safety first",
-    text: "We prioritize safety with health checks and more",
+    title: "Segurança Prioritária",
+    text: "Seguimos rigorosos protocolos de biossegurança para garantir seu atendimento com total tranquilidade",
     icon: "/assets/icons/home_features_safety-first.svg"
   },
   {
     id: 1,
-    title: "Insurance accepted",
-    text: "We’re in network with major insurers like Delta Dental, Aetna, and Cigna.",
-    icon: "/assets/icons/home_features_insurance.svg"
-  },
-  {
-    id: 2,
-    title: "Full-service dentistry",
-    text: "Our clinic offer a full of dental service, from exams to implants and veneers.",
+    title: "Tecnologia Avançada",
+    text: "Utilizamos equipamentos modernos e técnicas inovadoras para garantir tratamentos eficientes e confortáveis",
     icon: "/assets/icons/home_features_fullservice-d.svg"
   },
   {
+    id: 2,
+    title: "Serviços Completos",
+    text: "Desde consultas preventivas até tratamentos ortodônticos avançados e harmonização facial",
+    icon: "/assets/icons/home_features_insurance.svg"
+  },
+  {
     id: 3,
-    title: "No judgment ever",
-    text: "From floss bosses to sweet tooths, every mouth is welcome.",
+    title: "Atendimento Humanizado",
+    text: "Recebemos todos os pacientes com empatia e cuidado, sem julgamentos e com total atenção às necessidades",
     icon: "/assets/icons/home_features_no-judgement.svg"
   },
 ]
@@ -81,7 +81,7 @@ export const TESTIMONIALS = [
   {
     id: 0,
     name: "Victor Hugo",
-    text: "Desde a primeira consulta, antes do início do tratamento, já pude constatar que a Dra. Taciana era uma ótima profissional, e ela conseguiu passar uma sensação de que todo o processo seria o mais rápido e menos desconfortável possível. Hoje, depois de termos concluído um tratamento de 2 anos em 1 ano e 7 meses, só posso dizer que a impressão inicial não estava à altura. Então, só posso agradecer pelo excelente serviço prestado. 100% recomendada.",
+    text: "Desde a primeira consulta, antes do início do tratamento, já pude constatar que a Dra. Taciana era uma ótima profissional, e ela conseguiu passar uma sensação de que todo o processo seria o mais rápido e menos desconfortável possível. Hoje, depois de termos concluído um tratamento de 2 anos em 1 ano e 7 meses, só posso dizer que a impressão inicial não estava à altura.",
     rating: 5,
     image: "/assets/avatars/avatar.png"
   },

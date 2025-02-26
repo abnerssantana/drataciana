@@ -41,7 +41,7 @@ const HeroHeading = () => {
         className='hero_container_text'
         >
           <div className='wrapper'>
-            <h3>Seu sorriso perfeito, nossa especialidade.</h3>
+            <h2>Seu sorriso perfeito, nossa especialidade.</h2>
             <div className="line"></div>
           </div>
         </motion.div>
