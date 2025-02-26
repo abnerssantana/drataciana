@@ -7,12 +7,12 @@ const NavLogo = () => {
       <picture>
         <source 
         media="(max-width: 969px)" 
-        srcSet="/assets/logo/logo.png" 
+        srcSet="/assets/logo/logo.webp" 
         loading="lazy"
         />
         <source 
         media="(min-width: 970px)" 
-        srcSet="/assets/logo/logo.png" 
+        srcSet="/assets/logo/logo.webp" 
         loading="lazy"
         />
         <img 
