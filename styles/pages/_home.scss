@@ -199,7 +199,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 90px;
         gap: 20px;
 
         &-text {
@@ -296,5 +296,33 @@
                 flex: 100%;
             }
         }
+    }
+}
+
+.card-group-grid{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.card-group-grid_3{
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card-group-grid_4{
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Ajuste para dispositivos móveis muito pequenos */
+@media screen and (max-width: 360px) {
+    .card-group-grid_3,
+    .card-group-grid_4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .card--wicon-y {
+        width: 100%;
     }
 }

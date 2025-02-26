@@ -3,7 +3,7 @@ import { Container } from "../layout"
 import { HOME_SERVICES } from "@/utils/data"
 import { Card } from "@/components/elements"
 import { motion } from "framer-motion"
-import { fadeIn, staggerContainer } from "@/utils/motions"
+import { fadeIn } from "@/utils/motions"
 import { Heading } from "../common"
 import { MotionRow } from "../common/motion/MotionBlog"
 
@@ -25,7 +25,7 @@ const Services = () => {
 
         <motion.div 
         variants={fadeIn("up", "tween", 0.5, 1)}
-        className="card-group-grid card-group-grid_4"
+        className="card-group card-group-grid card-group-grid_4"
         >
           {HOME_SERVICES.map((item, index) => (
             <Card 
