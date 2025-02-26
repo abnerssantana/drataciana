@@ -1,13 +1,23 @@
+// Atualização para o components/layout/Footer.jsx
 'use client'
 import {
   Facebook,
   Twitter,
-  Instagram
+  Instagram,
+  Phone,
+  Clock,
+  MapPin
 } from "lucide-react"
+import Link from "next/link"
 import {
   FOOTER_DATA_CONTACT_INFORMATION,
 } from "./data"
 
+const iconMap = {
+  "Whastapp": Phone,
+  "Horário de funcionamento": Clock,
+  "Onde estamos": MapPin
+}
 
 const Footer = () => {
   return (
@@ -27,41 +37,45 @@ const Footer = () => {
             <div className="footer__col--content">
               <p className="label-12">Siga nas redes</p>
               <div className="footer__col--content__social-media">
-                <Facebook
-                  size={30}
-                  color="currentColor"
-                  style={{ cursor: 'pointer' }}
-                />
-                <Twitter
-                  size={30}
-                  color="currentColor"
-                  style={{ cursor: 'pointer' }}
-                />
-                <Instagram
-                  size={30}
-                  color="currentColor"
-                  style={{ cursor: 'pointer' }}
-                />
+                <Link href="#" className="footer__social-icon">
+                  <Facebook size={24} />
+                </Link>
+                <Link href="#" className="footer__social-icon">
+                  <Instagram size={24} />
+                </Link>
+                <Link href="#" className="footer__social-icon">
+                  <Twitter size={24} />
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="footer__col">
             <p className="label-12">Contato & informações</p>
-            {FOOTER_DATA_CONTACT_INFORMATION.map((item, index) => (
-              <div key={index} className="footer__col--info-group">
-                <img src={item.icon} alt="number" />
-                <div>
-                  <p className="label-12">{item.label}</p>
-                  <p className="p-18">{item.value}</p>
-                </div>
-              </div>
-            ))}
+            <div className="footer__contact-list">
+              {FOOTER_DATA_CONTACT_INFORMATION.map((item, index) => {
+                const IconComponent = iconMap[item.label] || Phone;
+                return (
+                  <div key={index} className="footer__col--info-group">
+                    <div className="footer__contact-icon">
+                      <IconComponent size={20} />
+                    </div>
+                    <div className="footer__contact-text">
+                      <p className="label-12">{item.label}</p>
+                      <p className="p-18">{item.value}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
 
         <div className="footer__row copyright">
-          <p className="p-16">&copy; Dra. Taciana Palamoni - All Rights Reserved</p>
+          <div className="footer__copyright-wrapper">
+            <p className="p-16">&copy; Dra. Taciana Palamoni - Todos os direitos reservados</p>
+            <p className="p-16 footer__developed-by">Desenvolvido por <a href="#" className="footer__developer-link">Fastlogia</a></p>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 export const MENU_LIST = [
-  { text: "Sobre", href: "/about", id: 0 },
-  { text: "Serviços", href: "/services", id: 1 },
+  { text: "Sobre", href: "#", id: 0 },
+  { text: "Serviços", href: "#", id: 1 },
   { text: "Blog", href: "/blog", id: 2 },
 ]
 
