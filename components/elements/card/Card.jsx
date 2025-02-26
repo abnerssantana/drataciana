@@ -1,26 +1,21 @@
-
 const Card = (props) => {
   const classNames = `card card--${props.variant}`;
 
-  // card variants
-  // - wicon-y
-  // - wicon-x
-  // - default
-  // - horizontal
-  // - wOutline
+  // Estilo para o background do image-wrap
+  const imageWrapStyle = props.color ? { backgroundColor: props.color } : {};
 
   return (
     <div className={classNames}>
       <div className={`card--${props.variant}__wrapper`}>
         {props.image && (
           <div 
-          className={`card--${props.variant}__image-wrap`}
-          style={{backgroundColor: `${props.color}`}}
+            className={`card--${props.variant}__image-wrap`}
+            style={imageWrapStyle}
           >
             <img
-            src={props.image}  
-            alt={props.title}
-            loading="lazy"
+              src={props.image}  
+              alt={props.title}
+              loading="lazy"
             />
           </div>
         )}
@@ -32,6 +27,5 @@ const Card = (props) => {
     </div>
   )
 }
-
 
 export default Card
