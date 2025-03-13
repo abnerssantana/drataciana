@@ -47,22 +47,22 @@ const CasesSlider = () => {
       }
     ],
     [
-        {
-          image: "/assets/casos/caso7.jpeg",
-          title: "Correção de Sobremordida",
-          description: "Tratamento: 16 meses"
-        },
-        {
-          image: "/assets/casos/caso8.jpeg",
-          title: "Invisalign Completo",
-          description: "Tratamento: 11 meses"
-        },
-        {
-          image: "/assets/casos/caso9.jpeg",
-          title: "Harmonia Facial",
-          description: "Tratamento: 20 meses"
-        }
-      ]
+      {
+        image: "/assets/casos/caso7.jpeg",
+        title: "Correção de Sobremordida",
+        description: "Tratamento: 16 meses"
+      },
+      {
+        image: "/assets/casos/caso8.jpeg",
+        title: "Invisalign Completo",
+        description: "Tratamento: 11 meses"
+      },
+      {
+        image: "/assets/casos/caso9.jpeg",
+        title: "Harmonia Facial",
+        description: "Tratamento: 20 meses"
+      }
+    ]
   ];
 
   const nextSlide = () => {
@@ -113,7 +113,7 @@ const CasesSlider = () => {
 
           {caseGroups.length > 1 && (
             <div className="cases-navigation">
-              <button className="nav-button prev-button" onClick={prevSlide}>
+              <button className="nav-button prev-button" onClick={prevSlide} aria-label="Slide anterior">
                 <ChevronLeft size={24} />
               </button>
               <div className="cases-dots">
@@ -122,10 +122,11 @@ const CasesSlider = () => {
                     key={index}
                     className={`case-dot ${currentSlide === index ? 'active' : ''}`}
                     onClick={() => setCurrentSlide(index)}
+                    aria-label={`Ir para slide ${index + 1}`}
                   />
                 ))}
               </div>
-              <button className="nav-button next-button" onClick={nextSlide}>
+              <button className="nav-button next-button" onClick={nextSlide} aria-label="Próximo slide">
                 <ChevronRight size={24} />
               </button>
             </div>

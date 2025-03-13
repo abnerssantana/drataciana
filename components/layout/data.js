@@ -8,7 +8,8 @@ export const FOOTER_DATA_CONTACT_INFORMATION = [
   {
     label: "Whastapp",
     value: "17 981141014",
-    icon: "/assets/footer/Footer_Number.svg"
+    icon: "/assets/footer/Footer_Number.svg",
+    whatsapp: true
   },
   {
     label: "Horário de funcionamento",
@@ -22,4 +23,3 @@ export const FOOTER_DATA_CONTACT_INFORMATION = [
     icon: "/assets/footer/Footer_Address.svg"
   }
 ]
-

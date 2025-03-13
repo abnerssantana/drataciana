@@ -20,6 +20,8 @@ const iconMap = {
 }
 
 const Footer = () => {
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=5517981141014&text=Ol%C3%A1,%20eu%20gostaria%20de%20agendar%20uma%20Avalia%C3%A7%C3%A3o!";
+  
   return (
     <footer className="footer">
       <div className="footer__wrapper">
@@ -62,8 +64,19 @@ const Footer = () => {
                     </div>
                     <div className="footer__contact-text">
                       <p className="label-12">{item.label}</p>
-                      <p className="p-18">{item.value}</p>
-                      <p className="p-18">{item.value2}</p>
+                      {item.whatsapp ? (
+                        <Link 
+                          href={whatsappUrl} 
+                          className="p-18"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {item.value}
+                        </Link>
+                      ) : (
+                        <p className="p-18">{item.value}</p>
+                      )}
+                      {item.value2 && <p className="p-18">{item.value2}</p>}
                     </div>
                   </div>
                 );

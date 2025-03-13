@@ -7,10 +7,12 @@ import { useClickAway } from "react-use";
 import Hamburger from 'hamburger-react'
 import { Button } from "../elements";
 import { navVariants } from "@/utils/motions";
+import Link from "next/link";
 
 const Navigation = () => {
   const [navActive, setNavActive] = useState(null);
   const [navbarScroll, setNavbarScroll] = useState(false);
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=5517981141014&text=Ol%C3%A1,%20eu%20gostaria%20de%20agendar%20uma%20Avalia%C3%A7%C3%A3o!";
 
   const ref = useRef(null);
   useClickAway(ref, () => setNavActive(false));
@@ -57,7 +59,14 @@ const Navigation = () => {
               />
             ))}
           </ul>
-          <Button size="md" variant="primary" type="button">Agendar Consulta</Button>
+          <Link 
+            href={whatsappUrl}
+            className="btn btn--primary btn--md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Agendar Consulta
+          </Link>
         </div>
       </div>
     </motion.nav>
