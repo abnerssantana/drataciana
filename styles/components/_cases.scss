@@ -1,0 +1,146 @@
+@use "../abstracts/index" as *;
+
+.cases-section {
+  margin: $margin-100 auto;
+  
+  .heading--center {
+    margin-bottom: $margin-50;
+  }
+}
+
+.cases-slider {
+  position: relative;
+  margin-top: $margin-50;
+}
+
+.cases-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+  @include min-width(medium) {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
+.case-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 100%;
+  border-radius: $border-radius-m;
+  background-color: $white;
+  box-shadow: 0px 5px 20px rgba(24, 25, 69, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+  @include max-width(mx-medium) {
+    margin-bottom: 20px;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.case-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: $border-radius-s $border-radius-s 0 0;
+}
+
+.case-image {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.case-info {
+  padding: 16px;
+  text-align: center;
+  
+  h4 {
+    margin-bottom: 8px;
+    color: $darkblue;
+  }
+  
+  .p-16 {
+    color: $darkblueop70;
+    margin: 0;
+  }
+}
+
+.cases-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav-button {
+  background-color: $purple-light;
+  color: $purple;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.cases-dots {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.case-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $darkblueop40;
+  border: none;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &.active {
+    background-color: $purple;
+    transform: scale(1.2);
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+// Estilo para telas menores
+@include max-width(mx-small) {
+  .cases-container {
+    margin: 0 auto;
+  }
+  
+  .case-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+}

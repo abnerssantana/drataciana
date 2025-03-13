@@ -7,6 +7,7 @@ import {
   HeroHeading,
   BlogPostRow
 } from '@/components/home'
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <DentalEmergency/>
       <Features/>
       <Experts/>
+      <BeforeAfterSlider />
       <Testimonials/>
       <BlogPostRow/>
     </>

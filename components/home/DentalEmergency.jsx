@@ -15,7 +15,7 @@ const DentalEmergency = () => {
           >
             <img
               className="emergency_img"
-              src="/assets/home/home_emergency.png"
+              src="/assets/home/drataci.png"
               alt="Dra. Taciana Palamoni - Especialista em Ortodontia"
             />
           </motion.div>
