@@ -15,51 +15,51 @@ const CasesSlider = () => {
     [
       {
         image: "/assets/casos/caso1.jpeg",
-        title: "Alinhamento Dental",
+        title: "Correção de mordida cruzada e arcadas estreitas com aparelho invisível",
         description: "Tratamento: 18 meses"
       },
       {
         image: "/assets/casos/caso2.jpeg",
-        title: "Mordida Cruzada",
+        title: "Correção da mordida aberta com aparelho estético",
         description: "Tratamento: 12 meses"
       },
       {
         image: "/assets/casos/caso3.jpeg",
-        title: "Espaçamento Dental",
+        title: "Fechamento de espaços com aparelho autoligado",
         description: "Tratamento: 14 meses"
       }
     ],
     [
       {
         image: "/assets/casos/caso4.jpeg",
-        title: "Correção de Sobremordida",
+        title: "Alinhamento dos dentes",
         description: "Tratamento: 16 meses"
       },
       {
         image: "/assets/casos/caso5.jpeg",
-        title: "Invisalign Completo",
+        title: "Correção de assimetria das arcadas com aparelho fixo",
         description: "Tratamento: 11 meses"
       },
       {
         image: "/assets/casos/caso6.jpeg",
-        title: "Harmonia Facial",
+        title: "Correção de mordida profunda",
         description: "Tratamento: 20 meses"
       }
     ],
     [
       {
         image: "/assets/casos/caso7.jpeg",
-        title: "Correção de Sobremordida",
+        title: "Avanço mandibular e correção da mordida profunda com placas alinhadoras transparentes",
         description: "Tratamento: 16 meses"
       },
       {
         image: "/assets/casos/caso8.jpeg",
-        title: "Invisalign Completo",
+        title: "Correção com Invisalign",
         description: "Tratamento: 11 meses"
       },
       {
         image: "/assets/casos/caso9.jpeg",
-        title: "Harmonia Facial",
+        title: "Arcadas mais largas e alinhadas",
         description: "Tratamento: 20 meses"
       }
     ]

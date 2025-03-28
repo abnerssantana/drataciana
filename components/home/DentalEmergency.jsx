@@ -25,9 +25,8 @@ const DentalEmergency = () => {
           >
             <div className="SectionWimage__row--contentWrapper">
               <p className="label-13">Dra. Taciana Palamoni</p>
-              <h2>Especialista em Ortodontia e Harmonização Facial</h2>
-              <p className="p-18">Formada pela Universidade São Leopoldo Mandic de Campinas SP (2000), com especialização em Ortopedia dos maxilares e Ortodontia. 
-                Título de Especialista em Ortodontia e certificação em Harmonização Facial, com aplicação de ácido hialurônico e toxina botulínica pela Sociedade Brasileira de Toxina Botulínica (2017).</p>
+              <h2>Especialista em Ortodontia</h2>
+              <p className="p-18">Cirurgia Dentista Formada pela Universidade de Alfenas MG (2000), Titulo de Especialista  em Ortodontia e Ortopedia Funcional  dos Maxilares pela  São Leopoldo Mandic de Campinas SP (2007). Membro da Sociedade Brasileira de Toxina Botulínica (2017).</p>
               <div className="btn-full-width">
                 <Button size="lg" variant="secondary" type="button">Marque sua consulta</Button>
               </div>

@@ -66,7 +66,7 @@ export const HOME_FEATURES = [
   {
     id: 2,
     title: "Serviços Completos",
-    text: "Desde consultas preventivas até tratamentos ortodônticos avançados e harmonização facial",
+    text: "Desde consultas preventivas até tratamentos ortodônticos avançados",
     icon: "/assets/icons/home_features_insurance.svg"
   },
   {

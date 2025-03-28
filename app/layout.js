@@ -5,9 +5,9 @@ import "../styles/main.scss";
 export const metadata = {
   metadataBase: new URL('https://www.drataciana.com.br/'),
   title: 'Dra. Taciana Palamoni - Ortoteen Ortodontia',
-  description: 'Clínica especializada em ortodontia e harmonização facial em São José do Rio Preto. Atendimento personalizado com tecnologia avançada.',
+  description: 'Clínica especializada em ortodontia em São José do Rio Preto. Atendimento personalizado com tecnologia avançada.',
   creator: 'Fastlogia',
-  keywords: ['ortodontia', 'harmonização facial', 'aparelho', 'ortopedia facial', 'dentes'],
+  keywords: ['ortodontia', 'aparelho', 'ortopedia facial', 'dentes'],
   openGraph: {
     title: 'Dra. Taciana Palamoni - Ortodontia Especializada',
     description: 'Tratamentos ortodônticos com tecnologia avançada e atendimento humanizado.',
